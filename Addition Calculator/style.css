@@ -1,0 +1,112 @@
+/* Universal selector: sabhi elements ke liye box-sizing apply hoga */
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;                       /* default margin hata diya */
+  min-height: 100dvh;               /* full device height cover kare */
+  display: grid;                    /* grid layout banaya */
+  place-items: center;              /* center horizontally + vertically */
+  background: #00362faf;            /* semi-transparent background color */
+}
+
+.container {
+  width: min(420px, 92vw);          /* max 420px, ya screen ka 92% */
+  background: #71d9e7;
+  border-radius: 16px;              /* round corners */
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.358); /* shadow for card effect */
+}
+
+h1 {
+  text-align: center;               /* center text */
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+}
+
+.input-group {
+  display: grid;                    /* inputs ko vertical gap ke sath arrange karega */
+  gap: 8px;                         /* vertical spacing */
+  margin: 12px 0;
+}
+
+label {
+  font-size: 0.95rem;
+}
+
+input[type="number"] {
+  padding: 12px;
+  border: 1px solid #e3e7ef;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+input[type="number"]:focus {
+  border-color: #6a8cff;            /* focus hone par blue border */
+  box-shadow: 0 0 0 3px rgba(106,140,255,0.2); /* focus glow */
+}
+
+.actions {
+  display: flex;                    /* buttons ek line me aayenge */
+  gap: 10px;                        /* space between buttons */
+  margin-top: 14px;
+}
+
+button {
+  flex: 1;                          /* buttons equal size lenge */
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.06s ease, box-shadow 0.2s; /* hover/active animation */
+}
+
+#addBtn {
+  background: #6a8cff;
+  color: white;
+  box-shadow: 0 6px 14px rgba(106,140,255,0.35); /* blue shadow */
+}
+#addBtn:active { transform: translateY(1px); }   /* click hone par halka dabega */
+
+.secondary {
+  background: #eef1f7;
+}
+.secondary:active { transform: translateY(1px); }
+
+.result {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f8faff;
+  border: 1px solid #e8edff;        /* halka blue border */
+  border-radius: 10px;
+  min-height: 48px;                 /* height fix takki empty hone par bhi jagah rahe */
+  display: grid;                    /* content ko center kare */
+  place-items: center;              /* center horizontally + vertically */
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2a44;
+}
+
+.error {
+  margin: 10px 0 0;
+  color: #c0392b;                   /* red color for error text */
+  font-weight: 600;
+  min-height: 1em;                  /* height fix takki layout jump na kare */
+}
+
+.hint {
+  margin-top: 8px;
+  text-align: center;
+  color: #6b7280;                   /* gray text */
+  font-size: 0.9rem;
+}
+
+kbd {
+  background: #111827;              /* black background */
+  color: #fff;                      /* white text */
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; /* monospace font */
+  font-size: 0.85em;
+}

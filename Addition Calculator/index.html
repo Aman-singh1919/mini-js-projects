@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Addition Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Addition Calculator</h1>
+
+    <!-- Input Group -->
+    <div class="input-group">
+      <label for="num1">Number 1</label>
+      <input id="num1" type="number" placeholder="Enter first number" />
+    </div>
+
+    <div class="input-group">
+      <label for="num2">Number 2</label>
+      <input id="num2" type="number" placeholder="Enter second number" />
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="addBtn">Add</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="result" aria-live="polite">Result will appear here</div>
+    <p id="error" class="error" role="alert" aria-live="assertive"></p>
+
+    <p class="hint">Tip: Press <kbd>Enter</kbd> to add quickly.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

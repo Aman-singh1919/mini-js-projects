@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Searchable Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Main container -->
+  <div class="contaner">
+
+    <!-- Dropdown header -->
+    <div class="serch-option">
+      <span id="selected-text">Select Country</span>
+      <i class="fa-solid fa-caret-down"></i>
+    </div>
+
+    <!-- Search box + List -->
+    <div class="list-serch-contaner">
+
+      <!-- Search box -->
+      <div class="serch-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="serch" spellcheck="false" placeholder="Search country">
+      </div>
+
+      <!-- Country list -->
+      <ul class="list">
+        <li class="list-items">India</li>
+        <li class="list-items">United States</li>
+        <li class="list-items">Canada</li>
+        <li class="list-items">Australia</li>
+        <li class="list-items">Germany</li>
+        <li class="list-items">France</li>
+        <li class="list-items">Japan</li>
+        <li class="list-items">China</li>
+        <li class="list-items">Brazil</li>
+        <li class="list-items">South Africa</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
